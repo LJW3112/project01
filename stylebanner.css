@@ -1,0 +1,93 @@
+/* 
+轮播图demo
+*/
+.banner {
+    width: 1170px;
+    height: 658px;
+    margin: 0px auto;
+    /* background-color:aquamarine; */
+    overflow: hidden;
+    /*用于隐藏超出展示容器的内容部分*/
+    /**下移元素**/
+    transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    /* 元素上下左右移动位置 */
+    /* .div1 {
+        transform: translateY(-50%);
+        *上移元素*
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .div2 {
+        transform: translateY(50%);
+        *下移元素*
+        -ms-transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+    }
+
+    .div3 {
+        transform: translateX(-50%);
+        *左移元素*
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+
+    .div4 {
+        transform: translateX(50%);
+        *右移元素*
+        -ms-transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+    } */
+
+}
+
+.banner-1 {
+    width: 6000px;
+    height: 400px;
+    margin: 0px auto;
+    animation: text 30s infinite linear;
+    font-size: 0px;
+    /*消除图片间隔*/
+    /**下移元素**/
+    transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+
+}
+
+.banner img {
+    width: 1170px;
+    height: 658px;
+    float: left;
+}
+
+@keyframes text {
+
+    /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%,
+    10% {
+        margin-left: 0px;
+    }
+
+    20%,
+    30% {
+        margin-left: -1170px;
+    }
+
+    40%,
+    50% {
+        margin-left: -2340px;
+    }
+
+    60%,
+    70% {
+        margin-left: -3510px;
+    }
+
+    80%,
+    90% {
+        margin-left: -4680px;
+    }
+}

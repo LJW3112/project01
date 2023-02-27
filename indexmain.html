@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Drop Sidebar Menu | 3DLab </title>
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Js外部引用 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/Seiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylebanner.css">
+  <link rel="stylesheet" href="stylefooter.css">
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="footerstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .hr-solid-content {
+      color: #a2a9b6;
+      border: 0;
+      font-size: 12px;
+      padding: 1em 0;
+      position: relative;
+    }
+
+    .hr-solid-content::before {
+      content: attr(data-content);
+      position: absolute;
+      padding: 0 1ch;
+      line-height: 1px;
+      border: solid #d0d0d5;
+      border-width: 0 47vw;
+      width: fit-content;
+      /* for IE浏览器 */
+      white-space: nowrap;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 侧部导航栏列表 -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <a href="indexmain.html"><i class='bx bxl-xing'></i></a>
+      <!-- <span class="logo_name"> -->
+      <h1 class="logo-1">星汉</h1>
+      <section class="logo_name">Visual</section>
+      <!-- </span> -->
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="indexmain.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="link_name">首页</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="indexmain.html" target="_self">首页</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="indexpage01.html">
+            <i class='bx bx-extension'></i>
+            <span class="link_name">作品</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="indexpage01.html">星汉作品</a></li>
+          <li><a href="#">三维动画</a>
+          </li>
+          <li><a href="#">产品渲染</a>
+          </li>
+          <li><a href="#">产品详细</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-component'></i>
+            <span class="link_name">模型</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#" target="_self">模型</a></li>
+          <li><a href="#">数码模型</a></li>
+          <li><a href="#">人物模型</a></li>
+          <li><a href="#">动植物型</a></li>
+          <li><a href="#">其他</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxl-slack'></i>
+          <span class="link_name">工程</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">三维工程文件</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-landscape'></i>
+          <span class="link_name">贴图</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">贴图与HDR</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug'></i>
+            <span class="link_name">插件</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">插件</a></li>
+          <li><a href="#">渲染器</a></li>
+          <li><a href="#">建模辅助</a></li>
+          <li><a href="#">灯光插件</a></li>
+          <li><a href="#">贴图插件</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxl-netlify'></i>
+          <span class="link_name">软件</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">免费软件</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxl-deezer'></i>
+          <span class="link_name">音效</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">音效</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="indexcontact.html">
+          <!-- 引入外部小图标class类名输入关键词 -->
+          <i class='bx bx-mail-send'></i>
+          <span class="link_name">联系</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="indexcontact.html">联系我们</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="image/0.png" alt="profile">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">李君绾</div>
+            <div class="job">Web Designer</div>
+          </div>
+          <a href="indexloginpage0.html"><i class='bx bx-log-out'></i></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text"></span>
+      <!-- 用户登入 -->
+      <div class="icont-user">
+        <a href="indexloginpage0.html"><i class='bx bxs-user' style="color:rgb(0, 0, 0);"></i></a>
+      </div>
+      <div>
+
+      </div class="">
+      <a href=""><i class='bx bx-bell' id="bx-bell" style="color:rgb(0, 0, 0)"></i></a>
+    </div>
+
+
+    <!-- 轮播效果 -->
+    </div>
+    </div>
+    <hr>
+    <section class="font-type">
+      <center>
+        <h3></h3 </center>
+    </section>
+    <div class="banner">
+      <!-- 存储容器 -->
+      <div class="banner-1" style="border: 2px rgb(59, 59, 59)">
+        <!-- 引入轮播图片 -->
+        <a href="#"><img src="image/4.jpg" alt="image" class="img-1"></a>
+        <a href="#"><img src="image/1.jpg" alt="image" class=""></a>
+        <a href="#"><img src="image/5.jpg" alt="image" class=""></a>
+        <a href="#"><img src="image/7.jpg" alt="image" class=""></a>
+        <a href="#"><img src="image/8.png" alt="image" class=""></a>
+      </div>
+    </div>
+
+    <!-- 按钮 -->
+    <!-- <div class="carousel_map">
+      <div class="slide"> -->
+    <!--小圆点-->
+    <!-- <input type="radio" name="pic" id="pic1" checked />
+        <input type="radio" name="pic" id="pic2" />
+        <input type="radio" name="pic" id="pic3" />
+        <input type="radio" name="pic" id="pic4" />
+        <input type="radio" name="pic" id="pic5" />
+
+        <div class="labels">
+          <label for="pic1"></label>
+          <label for="pic2"></label>
+          <label for="pic3"></label>
+          <label for="pic4"></label>
+          <label for="pic5"></label>
+        </div> -->
+
+  </section>
+
+  <!-- 侧边导航栏动画脚本 -->
+  <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement;
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+
+
+
+
+
+    // 定义画布
+    let canvas = document.querySelector(".section");
+    // 定义画笔
+    let context = canvas.getContext('2d');
+    // 定义画布大小
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+    canvas.width = w;
+    canvas.height = h;
+    // 定义雪的数量
+    let num = 200;
+    let snows = [];
+    for (let i = 0; i < num; i++) {
+      snows.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 10 + 1
+      });
+    }
+    let move = () => {
+      for (let i = 0; i < num; i++) {
+        let snow = snows[i];
+        snow.x += Math.random() * 2 + 1;
+        snow.y += Math.random() * 2 + 1;
+        snow.x = snow.x > w ? 0 : snow.x;
+        snow.y = snow.y > h ? 0 : snow.y;
+      }
+    }
+    let draw = () => {
+      context.clearRect(0, 0, w, h);
+      context.beginPath();
+      context.fillStyle = 'rgb(255,255,255)';
+      context.shadowColor = 'rgb(255,255,255)';
+      context.shadowBlur = 10;
+
+      for (let i = 0; i < num; i++) {
+        let snow = snows[i];
+        context.moveTo(snow.x, snow.y);
+        context.arc(snow.x, snow.y, snow.r, 0, Math.PI * 2);
+      }
+      context.fill();
+      context.closePath();
+      move();
+    }
+    draw();
+    setInterval(draw, 30);
+  </script>
+
+
+  <!-- 内容区域 - 内容一-->
+  <!-- 卡片设计 -->
+  <div class="content">
+    <hr class="hr-solid-content" data-content="内容推荐">
+
+  </div>
+
+
+
+  <!-- 底部栏 -->
+  <!-- <footer>
+    <div class="header">
+      <center>
+        <section>
+          <p>
+          <h1 class="font_size">墓志铭</h1>
+          </p>
+        </section>
+        <section><span class="Vertical"></span></section>
+      </center>
+      <div class="inner-header flex">
+        <p class="type">只有我才能定义我自己</p>
+        <p class="type_1">只有我才能定义我自己</p>
+      </div> -->
+
+  <!-- <div> -->
+  <!--
+           xmlns:SVG命名看见URL
+          viewBox:定义当前视口（view）中绘制区域的大小
+          preserverAspectRatio:定义绘制区域视在视口中的对齐方式
+          shape-rendering:定义形状的渲染方式（如何呈现头像锯齿）
+        -->
+  <!-- <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserverAspectRatio="none" shape-rendering="auto"> -->
+  <!-- 定义一个defs元素 用于存储各种元素的定义 可以被其他元素引用
+          在defs元素中定义了一个名为“gentle-wave”的路径元素 用于描述
+          波浪形状 改路径秒苏联一系列二次贝塞尔曲线的控制点坐标 从而实现
+          波浪形状。 -->
+  <!-- <defs>
+            <path id="gentle-wave" d="M-160  44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(225,225,225,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(225,225,225,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(225,225,225,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="content flex">
+      <p>
+      <h3>CopeRight&copy;All Copy Right</h3>
+      </p>
+    </div>
+  </footer> -->
+</body>
+
+</html>
